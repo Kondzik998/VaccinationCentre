@@ -12,7 +12,7 @@
 # Pull and run project
 - Create folder and open cmd at this folder location.
 - type:
-  - ```git init .```
+  - ```git init```
   - ```git pull https://github.com/Kondzik998/VaccinationCentre```
 - open project in vscode then type in the terminal:
   - ``` npm install ```
