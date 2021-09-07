@@ -19,3 +19,4 @@
   - ``` npm start ```
 
 You should be able to listening app on http://localhost:4200/
+Current version is not displaying any data, i will add json-server in the future.
