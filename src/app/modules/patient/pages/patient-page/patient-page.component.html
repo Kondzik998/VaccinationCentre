@@ -1,0 +1,27 @@
+<div
+  class="patient-page"
+  ngClass.lt-md="patient-page-mobile"
+  *ngIf="visits$ | async as visits"
+>
+  <app-visits-list-filters
+    [state]="filters"
+    (filtersChanged)="onFiltersChanged($event)"
+  ></app-visits-list-filters>
+  <div class="mat-elevation-z5">
+    <app-visit-list
+      [data]="visits.content"
+      [columnsData]="columnsData"
+      class="patient-page-list"
+      (visitClick)="onVisitClick($event)"
+    ></app-visit-list>
+    <mat-paginator
+      [length]="visits.total"
+      [pageSize]="visits.size"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageOptionsChange($event)"
+      [pageIndex]="visits.page"
+      aria-label="Select page of visit list"
+    >
+    </mat-paginator>
+  </div>
+</div>

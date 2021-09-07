@@ -1,0 +1,32 @@
+.section-header {
+  margin: 32px 16px;
+}
+.edit-button {
+  margin: 32px 0;
+}
+.section-container {
+  padding: 16px;
+}
+input:disabled {
+  color: black;
+}
+.edit-container {
+  width: 100%;
+}
+.user-data-form {
+  margin-bottom: 10px;
+  width: 100%;
+}
+::ng-deep .mat-select-value-text {
+  color: black;
+}
+.vaccinated-container {
+  background-image: linear-gradient(
+    to right,
+    black 20%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
+}

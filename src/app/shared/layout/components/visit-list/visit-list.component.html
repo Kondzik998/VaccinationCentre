@@ -1,0 +1,16 @@
+<table mat-table [dataSource]="visitData">
+  <ng-container
+    *ngFor="let columnDataName of columns; let index = index"
+    [matColumnDef]="columnDataName"
+  >
+    <th mat-header-cell *matHeaderCellDef>{{ columnsNames[index] }}</th>
+    <td mat-cell *matCellDef="let data">{{ data[columnDataName] }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columns"></tr>
+  <tr
+    mat-row
+    *matRowDef="let visit; columns: columns"
+    (click)="visitListClick(visit)"
+  ></tr>
+</table>

@@ -1,0 +1,30 @@
+<div class="profile-page-wrapper">
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="User data">
+      <div class="user-profile-data-wrapper">
+        <app-user-details
+          [state]="user$ | async"
+          (profileEdit)="onProfileEdit($event)"
+        >
+        </app-user-details>
+      </div>
+    </mat-tab>
+    <mat-tab label="Visits" *ngIf="visits$ | async as visits">
+      <div class="visit-list-wrapper">
+        <app-visit-list
+          [data]="visits"
+          (visitClick)="onVisitClick($event)"
+          [fxHide]="visits.length === 0"
+          [columnsData]="columnsData"
+        ></app-visit-list>
+        <h1
+          fxLayoutAlign="center center"
+          [fxShow]="visits.length === 0"
+          class="no-visits"
+        >
+          No visits
+        </h1>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

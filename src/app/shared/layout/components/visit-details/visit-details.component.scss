@@ -1,0 +1,33 @@
+.card {
+  max-width: 800px;
+  padding: 0;
+  border: 2px solid #673ab7;
+}
+
+.subtitle-mobile {
+  font-size: 16px;
+  width: 100%;
+  margin: 5px auto;
+}
+
+mat-card-title {
+  padding: 30px 0 12px 0;
+
+  span {
+    font-size: 30px;
+  }
+}
+
+mat-card-subtitle {
+  font-size: 19px;
+  padding: 5px 0px;
+  span {
+    font-weight: bold;
+  }
+}
+
+p {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.644);
+  padding: 8px 15px 20px;
+}

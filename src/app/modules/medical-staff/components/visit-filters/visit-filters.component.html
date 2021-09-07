@@ -1,0 +1,55 @@
+<app-panel>
+  <form
+    fxLayout="row wrap"
+    fxLayoutGap="15px"
+    fxLayout.lt-md="column"
+    [formGroup]="filtersForm"
+    [ngClass.gt-xs]="'filters-container'"
+    [ngClass.lt-md]="'filters-mobile-container'"
+  >
+    <mat-form-field appearance="outline">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [formGroup]="filtersForm" [rangePicker]="picker">
+        <input matStartDate formControlName="fromDate" placeholder="from" />
+        <input matEndDate formControlName="toDate" placeholder="to" />
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+
+      <mat-error *ngIf="fromDate?.hasError('matStartDateInvalid')"
+        >Invalid start date</mat-error
+      >
+      <mat-error *ngIf="toDate?.hasError('matEndDateInvalid')"
+        >Invalid end date</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Patient</mat-label>
+      <input formControlName="patientName" matInput type="text" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Facility</mat-label>
+      <input formControlName="city" matInput type="text" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Vaccine</mat-label>
+      <mat-select formControlName="manufacturer">
+        <mat-option [value]="vaccinationManufacture.BIONTECH_PFIZER"
+          >BioNTech/Pfizer</mat-option
+        >
+        <mat-option [value]="vaccinationManufacture.MODERNA"
+          >Moderna</mat-option
+        >
+        <mat-option [value]="vaccinationManufacture.ASTRAZENECA"
+          >AstraZeneca</mat-option
+        >
+        <mat-option [value]="vaccinationManufacture.JOHNSON_JOHNSON"
+          >Johnson & Johnson</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+  </form>
+</app-panel>

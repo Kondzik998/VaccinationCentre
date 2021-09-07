@@ -1,0 +1,51 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title
+      ><span>COVID-19 Vaccination</span><mat-divider></mat-divider
+    ></mat-card-title>
+
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Vaccination time:</span> {{ visit.visitDate }}
+      {{ visit.visitDateTime }}</mat-card-subtitle
+    >
+
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Vaccine type: </span>{{ visit.vaccine.name }}</mat-card-subtitle
+    >
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Vaccine doses: </span
+      >{{ visit.vaccine.vaccineDose | Dose }}</mat-card-subtitle
+    >
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Facility name: </span> {{ visit.facility.name }}</mat-card-subtitle
+    >
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Facility address: </span> {{ visit.facility.street }},
+      {{ visit.facility.city }},
+      {{ visit.facility.country }}
+    </mat-card-subtitle>
+
+    <mat-card-subtitle ngClass.lt-md="subtitle-mobile"
+      ><span>Contact phone number: </span
+      >{{ visit.facility.contactPhone }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Stay at the place where you get vaccinated for at least 15 minutes
+      afterwards, just in case you have an unusual reaction, so health workers
+      can help you.
+    </p>
+    <p>
+      While a COVID-19 vaccine will prevent serious illness and death, we still
+      don’t know the extent to which it keeps you from being infected and
+      passing the virus on to others. The more we allow the virus to spread, the
+      more opportunity the virus has to change. Continue to take actions to slow
+      and eventually stop the spread of the virus: Keep at least 1 metre from
+      others Wear a mask, especially in crowded, closed and poorly ventilated
+      settings. Clean your hands frequently Cover any cough or sneeze in your
+      bent elbow When indoors with others, ensure good ventilation, such as by
+      opening a window Doing it all protects us all.
+    </p>
+  </mat-card-content>
+</mat-card>

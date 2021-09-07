@@ -1,0 +1,12 @@
+<mat-toolbar
+  class="site-header"
+  fxLayout="row"
+  fxLayoutAlign.gt-sm="space-between"
+  fxLayoutGap="1vw"
+>
+  <div fxHide.gt-sm fxLayoutAlign="start center">
+    <mat-icon (click)="onMenuClicked()">menu</mat-icon>
+  </div>
+  <app-logo fxLayoutAlign="start center"></app-logo>
+  <app-nav-list direction="row" fxShow="true" fxHide.lt-md></app-nav-list>
+</mat-toolbar>

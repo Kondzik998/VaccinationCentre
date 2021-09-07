@@ -1,0 +1,16 @@
+<div
+  [fxLayout]="direction"
+  [fxLayoutAlign]="isColumnDirection ? 'start start' : 'center center'"
+  class="nav-menu-items"
+  [class.nav-list-column]="isColumnDirection"
+>
+  <a routerLink="/patient"
+    ><button class="nav-item" mat-flat-button>Patient</button></a
+  >
+  <a routerLink="/medical-staff"
+    ><button class="nav-item" mat-flat-button>Medical Staff</button></a
+  >
+  <a routerLink="/profile"
+    ><button class="nav-item" mat-flat-button>Profile</button></a
+  >
+</div>

@@ -1,0 +1,18 @@
+<div
+  *ngIf="this.visitDetails$ | async as visitDetails; else spinner"
+  class="container"
+  ngClass.lt-md="mobile-container"
+>
+  <app-visit-details [visit]="visitDetails"></app-visit-details>
+  <button
+    mat-raised-button
+    color="primary"
+    class="register-button"
+    (click)="onRegisterClick(visitDetails.id)"
+  >
+    Register
+  </button>
+</div>
+<ng-template #spinner>
+  <mat-spinner class="mat-spinner"></mat-spinner
+></ng-template>

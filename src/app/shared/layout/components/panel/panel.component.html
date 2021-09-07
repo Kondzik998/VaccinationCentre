@@ -1,0 +1,31 @@
+<div
+  *ngIf="mobileView"
+  fxLayout="column"
+  fxLayoutAlign="center end"
+  class="button-container"
+>
+  <button
+    mat-stroked-button
+    color="primary"
+    class="button"
+    (click)="buttonClicked()"
+  >
+    <ng-container
+      *ngIf="!show; then showFilters; else hideFilters"
+    ></ng-container>
+  </button>
+
+  <ng-template #showFilters>
+    Show Filters
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </ng-template>
+
+  <ng-template #hideFilters>
+    Hide Filters
+    <mat-icon>keyboard_arrow_up</mat-icon>
+  </ng-template>
+</div>
+
+<ng-container *ngIf="show">
+  <ng-content></ng-content>
+</ng-container>

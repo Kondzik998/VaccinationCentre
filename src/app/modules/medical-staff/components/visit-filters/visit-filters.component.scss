@@ -1,0 +1,25 @@
+.filters-container {
+  animation: fadein 0.3s;
+  margin-top: 22px;
+  ::ng-deep .mat-form-field-wrapper {
+    margin-bottom: -1.25em;
+  }
+}
+
+.filters-mobile-container {
+  animation: fadein 0.3s;
+  margin-top: 22px;
+  ::ng-deep .mat-form-field-wrapper {
+    margin-bottom: -1.25em;
+    width: 90vw;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

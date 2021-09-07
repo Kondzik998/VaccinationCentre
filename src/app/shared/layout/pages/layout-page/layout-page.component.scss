@@ -1,0 +1,14 @@
+.content {
+  min-height: calc(100vh - 72px - 56px);
+  max-width: 1300px;
+  width: 100%;
+}
+.content-container {
+  padding: 0 16px;
+}
+.sidenav {
+  width: 50vw;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  top: 56px;
+}

@@ -1,0 +1,134 @@
+<form [formGroup]="userDetailsForm" fxLayout="column" class="user-data-form">
+  <div class="edit-container" fxLayout="row" fxLayoutAlign="center">
+    <h2 class="section-header" fxLayoutAlign="center center">
+      Account details
+    </h2>
+    <app-edit-account
+      (editClicked)="onEditClicked()"
+      fxLayoutAlign="center center"
+      class="edit-button"
+    ></app-edit-account>
+  </div>
+
+  <div
+    fxLayoutGap.gt-sm="5%"
+    fxLayoutGap.lt-sm="0%"
+    fxLayout.lt-md="column"
+    fxLayout.gt-sm="row"
+    class="section-container"
+  >
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>First name</mat-label>
+        <input matInput formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Other name</mat-label>
+        <input matInput formControlName="otherNames" />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Date of birth"
+          formControlName="dateOfBirth"
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>Last name</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select formControlName="gender" placeholder="Gender">
+          <mat-option *ngFor="let gender of genders" [value]="gender.value">
+            {{ gender.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-label>Vaccinated</mat-label>
+      <div class="vaccinated-container">
+        {{ state.userDetailsDTO.isVaccinated | vaccine }}
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h2 fxLayoutAlign="center">Address</h2>
+  </div>
+
+  <div
+    fxLayoutGap.gt-sm="5%"
+    fxLayoutGap.lt-sm="0%"
+    fxLayout.lt-md="column"
+    fxLayout.gt-sm="row"
+    class="section-container"
+  >
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>Country</mat-label>
+        <input matInput formControlName="country" />
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>City</mat-label>
+        <input matInput formControlName="city" />
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>Street</mat-label>
+        <input matInput formControlName="street" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h2 fxLayoutAlign="center">Contact details</h2>
+  </div>
+
+  <div
+    fxLayoutGap.gt-sm="5%"
+    fxLayoutGap.lt-sm="0%"
+    fxLayout.lt-md="column"
+    fxLayout.gt-sm="row"
+    class="section-container"
+  >
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>Phone number</mat-label>
+        <input matInput formControlName="contactPhone" />
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" fxFlex.gt-sm="50%">
+      <mat-form-field>
+        <mat-label>E-mail address</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div
+    class="save-edit-button-wrapper"
+    fxLayoutAlign="end"
+    [fxHide]="showEditable"
+  >
+    <button
+      mat-flat-button
+      color="primary"
+      (click)="onEditProfile()"
+      [disabled]="userDetailsForm.invalid"
+    >
+      Save
+    </button>
+  </div>
+</form>

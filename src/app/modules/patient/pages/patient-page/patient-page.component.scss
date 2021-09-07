@@ -1,0 +1,9 @@
+.patient-page {
+  padding: 10px;
+  user-select: none;
+
+  &-mobile {
+    width: 100%;
+    overflow: hidden;
+  }
+}

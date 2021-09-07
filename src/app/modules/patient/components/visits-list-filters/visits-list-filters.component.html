@@ -1,0 +1,57 @@
+<app-panel>
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    fxLayoutGap="15px"
+    fxLayout.lt-md="column"
+    class="filters-container"
+    [ngClass.gt-xs]="'filters-container'"
+    [ngClass.lt-md]="'filters-mobile-container'"
+  >
+    <mat-form-field appearance="outline" [formGroup]="filters">
+      <mat-label>City</mat-label>
+      <input matInput formControlName="city" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [formGroup]="filters" [rangePicker]="picker">
+        <input matStartDate formControlName="fromDate" placeholder="from" />
+        <input matEndDate formControlName="toDate" placeholder="to" />
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+
+      <mat-error *ngIf="fromDate?.hasError('matStartDateInvalid')"
+        >Invalid start date</mat-error
+      >
+      <mat-error *ngIf="toDate?.hasError('matEndDateInvalid')"
+        >Invalid end date</mat-error
+      >
+    </mat-form-field>
+
+    <form [formGroup]="filters">
+      <mat-form-field appearance="outline">
+        <mat-label>Doses</mat-label>
+        <mat-select matNativeControl formControlName="dose">
+          <mat-option value="">any</mat-option>
+          <mat-option value="DOUBLE_DOSE">double dose</mat-option>
+          <mat-option value="SINGLE_DOSE">single dose</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+
+    <form [formGroup]="filters">
+      <mat-form-field appearance="outline">
+        <mat-label>Manufacturer</mat-label>
+        <mat-select matNativeControl formControlName="manufacturer">
+          <mat-option value="">any</mat-option>
+          <mat-option value="MODERNA">Moderna</mat-option>
+          <mat-option value="ASTRAZENECA">AstraZeneca</mat-option>
+          <mat-option value="BIONTECH_PFIZER">BioNTech-Pfilzer</mat-option>
+          <mat-option value="JOHNSON_JOHNSON">Johnson & Johnson</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+</app-panel>

@@ -1,0 +1,22 @@
+<div
+  *ngIf="visitDetails$ | async as visitDetails; else spinner"
+  class="container"
+  ngClass.lt-md="mobile-container"
+  fxLayout="column"
+>
+  <app-visit-details [visit]="visitDetails"></app-visit-details>
+  <button
+    [fxShow]="isVisitCancelable$ | async"
+    fxLayout="column"
+    fxLayoutAlign="end"
+    class="cancel-visit"
+    mat-raised-button
+    color="primary"
+    (click)="onClickCancelButton(visitDetails.id)"
+  >
+    Cancel Visit
+  </button>
+</div>
+<ng-template #spinner>
+  <mat-spinner class="mat-spinner"></mat-spinner
+></ng-template>

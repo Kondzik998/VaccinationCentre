@@ -1,0 +1,14 @@
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav class="sidenav">
+    <app-nav-list direction="column" fxHide.gt-sm></app-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <app-header (menuClicked)="sidenav.toggle()"></app-header>
+    <div class="content-container" fxLayoutAlign="center">
+      <div class="content">
+        <ng-content></ng-content>
+      </div>
+    </div>
+    <app-footer fxLayoutAlign="end" fxLayout="column"></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

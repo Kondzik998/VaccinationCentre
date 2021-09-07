@@ -1,0 +1,1546 @@
+{
+  "pipes": [],
+  "interfaces": [
+    {
+      "name": "Visit",
+      "id": "interface-Visit-26e6aa32406f02363314a6f344ebf8c8",
+      "file": "src/app/core/models/visit.model.ts",
+      "deprecated": false,
+      "deprecationMessage": "",
+      "type": "interface",
+      "sourceCode": "export interface Visit {\n  visitDate: String;\n  visitDateTime: String;\n  vaccineName: string;\n  tookPlace: boolean;\n  facilityName: string;\n  facilityCountry: string;\n  facilityCity: string;\n  facilityStreet: string;\n  facilityContactPhone: string;\n}\n",
+      "properties": [
+        {
+          "name": "facilityCity",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 8
+        },
+        {
+          "name": "facilityContactPhone",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 10
+        },
+        {
+          "name": "facilityCountry",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 7
+        },
+        {
+          "name": "facilityName",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 6
+        },
+        {
+          "name": "facilityStreet",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 9
+        },
+        {
+          "name": "tookPlace",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "boolean",
+          "optional": false,
+          "description": "",
+          "line": 5
+        },
+        {
+          "name": "vaccineName",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 4
+        },
+        {
+          "name": "visitDate",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "String",
+          "optional": false,
+          "description": "",
+          "line": 2
+        },
+        {
+          "name": "visitDateTime",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "String",
+          "optional": false,
+          "description": "",
+          "line": 3
+        }
+      ],
+      "indexSignatures": [],
+      "kind": 163,
+      "methods": []
+    }
+  ],
+  "injectables": [],
+  "guards": [],
+  "interceptors": [],
+  "classes": [],
+  "directives": [],
+  "components": [
+    {
+      "name": "AppComponent",
+      "id": "component-AppComponent-f7fcec9817da1b28269ae20e0289d707",
+      "file": "src/app/app.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-root",
+      "styleUrls": ["./app.component.scss"],
+      "styles": [],
+      "templateUrl": ["./app.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "title",
+          "defaultValue": "'vaccination-center'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 10
+        }
+      ],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class AppComponent {\r\n  title = 'vaccination-center';\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./app.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<app-layout-page>\r\n  <router-outlet></router-outlet>\r\n</app-layout-page>\r\n"
+    },
+    {
+      "name": "FooterComponent",
+      "id": "component-FooterComponent-a94376022da02796e820bc7119d8958a",
+      "file": "src/app/shared/layout/components/footer/footer.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-footer",
+      "styleUrls": ["./footer.component.scss"],
+      "styles": [],
+      "templateUrl": ["./footer.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-footer',\r\n  templateUrl: './footer.component.html',\r\n  styleUrls: ['./footer.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class FooterComponent {}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": ".footer {\r\n  color: #a3a3a4;\r\n  font-size: 16px;\r\n  background-color: #f4f5f6;\r\n  height: 72px;\r\n}\r\n\r\n.copyright-text {\r\n  padding-left: 26px;\r\n}\r\n\r\n.copyright-text-mobile {\r\n  padding: 0;\r\n}\r\n",
+          "styleUrl": "./footer.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<footer\r\n  class=\"footer\"\r\n  ngClass.lt-md=\"footer-mobile\"\r\n  fxLayoutAlign.lt-md=\"center\"\r\n  fxLayoutAlign=\"start\"\r\n  fxLayout=\"row\"\r\n>\r\n  <span\r\n    ngClass.lt-md=\"copyright-text-mobile\"\r\n    fxLayoutAlign=\"start center\"\r\n    fxLayoutAlign.lt-md=\"center center\"\r\n    class=\"copyright-text\"\r\n  >\r\n    &copy; Copyright 2021 Billennium S.A.\r\n  </span>\r\n</footer>\r\n"
+    },
+    {
+      "name": "HeaderComponent",
+      "id": "component-HeaderComponent-83509f1dfb00a4d09a959a0b773e0e3d",
+      "file": "src/app/shared/layout/components/header/header.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-header",
+      "styleUrls": ["./header.component.scss"],
+      "styles": [],
+      "templateUrl": ["./header.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [
+        {
+          "name": "menuClicked",
+          "defaultValue": "new EventEmitter<void>()",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 15,
+          "type": "EventEmitter"
+        }
+      ],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "onMenuClicked",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 17,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "modifierKind": [122]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import {\r\n  ChangeDetectionStrategy,\r\n  Component,\r\n  Output,\r\n  EventEmitter,\r\n} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-header',\r\n  templateUrl: './header.component.html',\r\n  styleUrls: ['./header.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class HeaderComponent {\r\n  @Output() menuClicked = new EventEmitter<void>();\r\n\r\n  public onMenuClicked(): void {\r\n    this.menuClicked.emit();\r\n  }\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": ".site-header {\r\n  height: 56px;\r\n  background-color: #fff;\r\n  box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 2%), 0px 0px 12px 0px rgb(0 0 0 / 4%),\r\n    0px 2px 7px -1px rgb(0 0 0 / 6%);\r\n  position: sticky;\r\n  top: 0;\r\n  left: 0;\r\n  z-index: 2;\r\n  overflow-y: hidden;\r\n}\r\nmat-icon {\r\n  cursor: pointer;\r\n}\r\n",
+          "styleUrl": "./header.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<mat-toolbar\r\n  class=\"site-header\"\r\n  fxLayout=\"row\"\r\n  fxLayoutAlign.gt-sm=\"space-between\"\r\n  fxLayoutGap=\"1vw\"\r\n>\r\n  <div fxHide.gt-sm fxLayoutAlign=\"start center\">\r\n    <mat-icon (click)=\"onMenuClicked()\">menu</mat-icon>\r\n  </div>\r\n  <app-logo fxLayoutAlign=\"start center\"></app-logo>\r\n  <app-nav-list direction=\"row\" fxShow=\"true\" fxHide.lt-md></app-nav-list>\r\n</mat-toolbar>\r\n"
+    },
+    {
+      "name": "LayoutPageComponent",
+      "id": "component-LayoutPageComponent-6b7434acba1b206d8383f21cc649d1d9",
+      "file": "src/app/shared/layout/pages/layout-page/layout-page.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-layout-page",
+      "styleUrls": ["./layout-page.component.scss"],
+      "styles": [],
+      "templateUrl": ["./layout-page.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-layout-page',\r\n  templateUrl: './layout-page.component.html',\r\n  styleUrls: ['./layout-page.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class LayoutPageComponent {}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": ".content-wrapper {\r\n  min-height: calc(100vh - 72px - 56px);\r\n  max-width: 1400px;\r\n  width: 100%;\r\n}\r\n\r\n.sidenav {\r\n  width: 50vw;\r\n  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);\r\n  position: fixed;\r\n  top: 56px;\r\n}\r\n",
+          "styleUrl": "./layout-page.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<mat-sidenav-container fxFlexFill>\r\n  <mat-sidenav #sidenav class=\"sidenav\">\r\n    <app-nav-list direction=\"column\" fxHide.gt-sm></app-nav-list>\r\n  </mat-sidenav>\r\n  <mat-sidenav-content fxFlexFill>\r\n    <app-header (menuClicked)=\"sidenav.toggle()\"></app-header>\r\n    <div class=\"content-wrapper\" fxLayoutAlign=\"center\">\r\n      <ng-content></ng-content>\r\n    </div>\r\n    <app-footer fxLayoutAlign=\"end\" fxLayout=\"column\"></app-footer>\r\n  </mat-sidenav-content>\r\n</mat-sidenav-container>\r\n"
+    },
+    {
+      "name": "LogoComponent",
+      "id": "component-LogoComponent-a0a33621cf453b31c9ea2a9413a98a28",
+      "file": "src/app/shared/layout/components/logo/logo.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-logo",
+      "styleUrls": ["./logo.component.scss"],
+      "styles": [],
+      "templateUrl": ["./logo.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-logo',\r\n  templateUrl: './logo.component.html',\r\n  styleUrls: ['./logo.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class LogoComponent {}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./logo.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<span>Vaccination Centre</span>\r\n"
+    },
+    {
+      "name": "MediacalStaffPageComponent",
+      "id": "component-MediacalStaffPageComponent-2a57e0b87d52e7d4432103a76f545fbd",
+      "file": "src/app/modules/medical-staff/pages/mediacal-staff-page/mediacal-staff-page.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-mediacal-staff-page",
+      "styleUrls": ["./mediacal-staff-page.component.scss"],
+      "styles": [],
+      "templateUrl": ["./mediacal-staff-page.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 12,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-mediacal-staff-page',\r\n  templateUrl: './mediacal-staff-page.component.html',\r\n  styleUrls: ['./mediacal-staff-page.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class MediacalStaffPageComponent implements OnInit {\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./mediacal-staff-page.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 9
+      },
+      "implements": ["OnInit"],
+      "templateData": "<p>mediacal-staff-page works!</p>\r\n"
+    },
+    {
+      "name": "NavListComponent",
+      "id": "component-NavListComponent-65beb958a33aab76f4b2dd39853c551f",
+      "file": "src/app/shared/layout/components/nav-list/nav-list.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-nav-list",
+      "styleUrls": ["./nav-list.component.scss"],
+      "styles": [],
+      "templateUrl": ["./nav-list.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "direction",
+          "defaultValue": "'row'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 10,
+          "type": "\"row\" | \"column\""
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-nav-list',\r\n  templateUrl: './nav-list.component.html',\r\n  styleUrls: ['./nav-list.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class NavListComponent {\r\n  @Input() direction: 'row' | 'column' = 'row';\r\n  \r\n  get isColumnDirection() {\r\n    return this.direction === 'column';\r\n  }\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": ".nav-item:hover {\r\n  color: orange;\r\n}\r\n.nav-item {\r\n  background-color: transparent;\r\n}\r\n.nav-menu-items {\r\n  height: 100%;\r\n}\r\n.nav-list-column {\r\n  .nav-item {\r\n    width: 100%;\r\n  }\r\n}\r\n",
+          "styleUrl": "./nav-list.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "accessors": {
+        "isColumnDirection": {
+          "name": "isColumnDirection",
+          "getSignature": {
+            "name": "isColumnDirection",
+            "type": "",
+            "returnType": "",
+            "line": 12
+          }
+        }
+      },
+      "templateData": "<div\r\n  [fxLayout]=\"direction\"\r\n  [fxLayoutAlign]=\"isColumnDirection ? 'start start' : 'center center'\"\r\n  class=\"nav-menu-items\"\r\n  [class.nav-list-column]=\"isColumnDirection\"\r\n>\r\n  <button class=\"nav-item\" mat-flat-button>Patient</button>\r\n  <button class=\"nav-item\" mat-flat-button>Profile</button>\r\n  <button class=\"nav-item\" mat-flat-button>Medical-Staff</button>\r\n</div>\r\n"
+    },
+    {
+      "name": "PatientPageComponent",
+      "id": "component-PatientPageComponent-dd05065d5a97c8e74c9b899a48198438",
+      "file": "src/app/modules/patient/pages/patient-page/patient-page.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-patient-page",
+      "styleUrls": ["./patient-page.component.scss"],
+      "styles": [],
+      "templateUrl": ["./patient-page.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 12,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-patient-page',\r\n  templateUrl: './patient-page.component.html',\r\n  styleUrls: ['./patient-page.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class PatientPageComponent implements OnInit {\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./patient-page.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 9
+      },
+      "implements": ["OnInit"],
+      "templateData": "<p>patient-page works!</p>\r\n"
+    },
+    {
+      "name": "ProfilePageComponent",
+      "id": "component-ProfilePageComponent-32f9f1d64dc5f6cae5c67a433ab2932f",
+      "file": "src/app/modules/profile/pages/profile-page/profile-page.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-profile-page",
+      "styleUrls": ["./profile-page.component.scss"],
+      "styles": [],
+      "templateUrl": ["./profile-page.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 12,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-profile-page',\r\n  templateUrl: './profile-page.component.html',\r\n  styleUrls: ['./profile-page.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n})\r\nexport class ProfilePageComponent implements OnInit {\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./profile-page.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 9
+      },
+      "implements": ["OnInit"],
+      "templateData": "<p>profile-page works!</p>\r\n"
+    },
+    {
+      "name": "VisitDetailsComponent",
+      "id": "component-VisitDetailsComponent-d3d1f6ec7a6ca953339317a8afca037f",
+      "file": "src/app/shared/layout/components/visit-details/visit-details.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-visit-details",
+      "styleUrls": ["./visit-details.component.scss"],
+      "styles": [],
+      "templateUrl": ["./visit-details.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "facilityCity",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 17,
+          "type": "string"
+        },
+        {
+          "name": "facilityContactPhone",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 19,
+          "type": "string"
+        },
+        {
+          "name": "facilityCountry",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 16,
+          "type": "string"
+        },
+        {
+          "name": "facilityName",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 15,
+          "type": "string"
+        },
+        {
+          "name": "facilityStreet",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 18,
+          "type": "string"
+        },
+        {
+          "name": "tookPlace",
+          "defaultValue": "false",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 14,
+          "type": "boolean"
+        },
+        {
+          "name": "vaccineName",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 13,
+          "type": "string"
+        },
+        {
+          "name": "visit",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 10,
+          "type": "any"
+        },
+        {
+          "name": "visitDate",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 11,
+          "type": "string"
+        },
+        {
+          "name": "visitDateTime",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "string"
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector: 'app-visit-details',\n  templateUrl: './visit-details.component.html',\n  styleUrls: ['./visit-details.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class VisitDetailsComponent {\n  @Input() visit: any;\n  @Input() visitDate: string = '';\n  @Input() visitDateTime: string = '';\n  @Input() vaccineName: string = '';\n  @Input() tookPlace: boolean = false;\n  @Input() facilityName: string = '';\n  @Input() facilityCountry: string = '';\n  @Input() facilityCity: string = '';\n  @Input() facilityStreet: string = '';\n  @Input() facilityContactPhone: string = '';\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./visit-details.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<p>visit-details works!</p>\n"
+    },
+    {
+      "name": "VisitDetailsPageComponent",
+      "id": "component-VisitDetailsPageComponent-7e5127fa328e99b66a9866d99d0fdd34",
+      "file": "src/app/modules/patient/pages/visit-details-page/visit-details-page.component.ts",
+      "changeDetection": "ChangeDetectionStrategy.OnPush",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-visit-details-page",
+      "styleUrls": ["./visit-details-page.component.scss"],
+      "styles": [],
+      "templateUrl": ["./visit-details-page.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector: 'app-visit-details-page',\n  templateUrl: './visit-details-page.component.html',\n  styleUrls: ['./visit-details-page.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class VisitDetailsPageComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./visit-details-page.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": ""
+    }
+  ],
+  "modules": [
+    {
+      "name": "AppModule",
+      "id": "module-AppModule-40acddea56bc2c84ace56ba1b54e386c",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/app.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { SharedModule } from './shared/shared.module';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\nimport { FlexLayoutModule } from '@angular/flex-layout';\r\n\r\n@NgModule({\r\n  declarations: [AppComponent],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    SharedModule,\r\n    BrowserAnimationsModule,\r\n    FlexLayoutModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "AppComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "AppRoutingModule"
+            },
+            {
+              "name": "SharedModule"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": [
+            {
+              "name": "AppComponent"
+            }
+          ]
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "AppRoutingModule",
+      "id": "module-AppRoutingModule-f828ff1de4372f996e9a6640eca9093c",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/app-routing.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\n\r\nconst routes: Routes = [\r\n  {\r\n    path: 'medical-staff',\r\n    loadChildren: () =>\r\n      \"import('./modules/medical-staff/medical-staff.module').then(\\\n        (m) => m.MedicalStaffModule\\\n      )\",\r\n  },\r\n  {\r\n    path: 'patient',\r\n    loadChildren: () =>\r\n      \"import('./modules/patient/patient.module').then((m) => m.PatientModule)\",\r\n  },\r\n  {\r\n    path: 'profile',\r\n    loadChildren: () =>\r\n      \"import('./modules/profile/profile.module').then((m) => m.ProfileModule)\",\r\n  },\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule],\r\n})\r\nexport class AppRoutingModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "LayoutModule",
+      "id": "module-LayoutModule-8b0feac4bf4edf5af3d4c13090a7591b",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/shared/layout/layout.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { LayoutPageComponent } from './pages/layout-page/layout-page.component';\r\nimport { HeaderComponent } from './components/header/header.component';\r\nimport { FooterComponent } from './components/footer/footer.component';\r\nimport { MatToolbarModule } from '@angular/material/toolbar';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { FlexLayoutModule } from '@angular/flex-layout';\r\nimport { MatSidenavModule } from '@angular/material/sidenav';\r\nimport { MatListModule } from '@angular/material/list';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { NavListComponent } from './components/nav-list/nav-list.component';\r\nimport { LogoComponent } from './components/logo/logo.component';\r\nimport { VisitDetailsComponent } from './components/visit-details/visit-details.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    LayoutPageComponent,\r\n    HeaderComponent,\r\n    FooterComponent,\r\n    NavListComponent,\r\n    LogoComponent,\r\n    VisitDetailsComponent,\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    MatToolbarModule,\r\n    MatButtonModule,\r\n    FlexLayoutModule,\r\n    MatSidenavModule,\r\n    MatListModule,\r\n    MatIconModule,\r\n  ],\r\n  exports: [LayoutPageComponent, VisitDetailsComponent],\r\n})\r\nexport class LayoutModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "FooterComponent"
+            },
+            {
+              "name": "HeaderComponent"
+            },
+            {
+              "name": "LayoutPageComponent"
+            },
+            {
+              "name": "LogoComponent"
+            },
+            {
+              "name": "NavListComponent"
+            },
+            {
+              "name": "VisitDetailsComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "LayoutPageComponent"
+            },
+            {
+              "name": "VisitDetailsComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "MedicalStaffModule",
+      "id": "module-MedicalStaffModule-b86b4547dbb2322eb11f3ca9c448d41b",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/medical-staff/medical-staff.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { MedicalStaffRoutingModule } from './medical-staff-routing.module';\r\nimport { MediacalStaffPageComponent } from './pages/mediacal-staff-page/mediacal-staff-page.component';\r\n\r\n@NgModule({\r\n  declarations: [MediacalStaffPageComponent],\r\n  imports: [CommonModule, MedicalStaffRoutingModule],\r\n})\r\nexport class MedicalStaffModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "MediacalStaffPageComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "MedicalStaffRoutingModule"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "MedicalStaffRoutingModule",
+      "id": "module-MedicalStaffRoutingModule-3bda435a6f2f901658cc47be6421e4c7",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/medical-staff/medical-staff-routing.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { MediacalStaffPageComponent } from './pages/mediacal-staff-page/mediacal-staff-page.component';\r\n\r\nconst routes: Routes = [{ path: '', component: MediacalStaffPageComponent }];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule],\r\n})\r\nexport class MedicalStaffRoutingModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "PatientModule",
+      "id": "module-PatientModule-95087032e766801825ffff9d4977ad45",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/patient/patient.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { PatientRoutingModule } from './patient-routing.module';\r\nimport { PatientPageComponent } from './pages/patient-page/patient-page.component';\r\nimport { MatCardModule } from '@angular/material/card';\r\nimport { MatDividerHarness } from '@angular/material/divider/testing';\r\n\r\n@NgModule({\r\n  declarations: [PatientPageComponent],\r\n  imports: [\r\n    CommonModule,\r\n    PatientRoutingModule,\r\n    MatCardModule,\r\n    MatDividerHarness,\r\n  ],\r\n})\r\nexport class PatientModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "PatientPageComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "MatDividerHarness"
+            },
+            {
+              "name": "PatientRoutingModule"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "PatientRoutingModule",
+      "id": "module-PatientRoutingModule-38b221c2b10a54b1f550618fc9d8afec",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/patient/patient-routing.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { PatientPageComponent } from './pages/patient-page/patient-page.component';\r\n\r\nconst routes: Routes = [{ path: '', component: PatientPageComponent }];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule],\r\n})\r\nexport class PatientRoutingModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "ProfileModule",
+      "id": "module-ProfileModule-ae7bd41418c0c4333b92a17997812246",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/profile/profile.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { ProfileRoutingModule } from './profile-routing.module';\r\nimport { ProfilePageComponent } from './pages/profile-page/profile-page.component';\r\n\r\n@NgModule({\r\n  declarations: [ProfilePageComponent],\r\n  imports: [CommonModule, ProfileRoutingModule],\r\n})\r\nexport class ProfileModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "ProfilePageComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "ProfileRoutingModule"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "ProfileRoutingModule",
+      "id": "module-ProfileRoutingModule-73edd71c4bdc3575dfda4ddad4d96b90",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/modules/profile/profile-routing.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { ProfilePageComponent } from './pages/profile-page/profile-page.component';\r\n\r\nconst routes: Routes = [{ path: '', component: ProfilePageComponent }];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forChild(routes)],\r\n  exports: [RouterModule],\r\n})\r\nexport class ProfileRoutingModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": []
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "SharedModule",
+      "id": "module-SharedModule-97c0af219f1eafe61e57d5262e2fd7ab",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "src/app/shared/shared.module.ts",
+      "methods": [],
+      "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { LayoutModule } from './layout/layout.module';\r\nimport { LayoutPageComponent } from './layout/pages/layout-page/layout-page.component';\r\nimport { VisitDetailsComponent } from './layout/components/visit-details/visit-details.component';\r\n\r\n@NgModule({\r\n  declarations: [],\r\n  imports: [CommonModule, LayoutModule],\r\n  exports: [LayoutPageComponent, VisitDetailsComponent],\r\n})\r\nexport class SharedModule {}\r\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "LayoutModule"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "LayoutPageComponent"
+            },
+            {
+              "name": "VisitDetailsComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "miscellaneous": {
+    "variables": [
+      {
+        "name": "basic",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/visit-details.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "Template.bind({})"
+      },
+      {
+        "name": "context",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/test.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+      },
+      {
+        "name": "environment",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/environments/environment.prod.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "object",
+        "defaultValue": "{\r\n  production: true,\r\n}"
+      },
+      {
+        "name": "environment",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/environments/environment.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "object",
+        "defaultValue": "{\r\n  production: false,\r\n}"
+      },
+      {
+        "name": "require",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/test.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "literal type"
+      },
+      {
+        "name": "Template",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/visit-details.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story<VisitDetailsComponent>",
+        "defaultValue": "(args) => ({\n  props: args,\n})"
+      }
+    ],
+    "functions": [],
+    "typealiases": [],
+    "enumerations": [],
+    "groupedVariables": {
+      "src/stories/visit-details.stories.ts": [
+        {
+          "name": "basic",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/visit-details.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "Template.bind({})"
+        },
+        {
+          "name": "Template",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/visit-details.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story<VisitDetailsComponent>",
+          "defaultValue": "(args) => ({\n  props: args,\n})"
+        }
+      ],
+      "src/test.ts": [
+        {
+          "name": "context",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/test.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+        },
+        {
+          "name": "require",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/test.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "literal type"
+        }
+      ],
+      "src/environments/environment.prod.ts": [
+        {
+          "name": "environment",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/environments/environment.prod.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "object",
+          "defaultValue": "{\r\n  production: true,\r\n}"
+        }
+      ],
+      "src/environments/environment.ts": [
+        {
+          "name": "environment",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/environments/environment.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "object",
+          "defaultValue": "{\r\n  production: false,\r\n}"
+        }
+      ]
+    },
+    "groupedFunctions": {},
+    "groupedEnumerations": {},
+    "groupedTypeAliases": {}
+  },
+  "routes": {
+    "name": "<root>",
+    "kind": "module",
+    "className": "AppModule",
+    "children": [
+      {
+        "name": "routes",
+        "filename": "src/app/app-routing.module.ts",
+        "module": "AppRoutingModule",
+        "children": [
+          {
+            "path": "medical-staff",
+            "loadChildren": "./modules/medical-staff/medical-staff.module#MedicalStaffModule",
+            "children": [
+              {
+                "kind": "module",
+                "children": [
+                  {
+                    "name": "routes",
+                    "filename": "src/app/modules/medical-staff/medical-staff-routing.module.ts",
+                    "module": "MedicalStaffRoutingModule",
+                    "children": [
+                      {
+                        "path": "",
+                        "component": "MediacalStaffPageComponent"
+                      }
+                    ],
+                    "kind": "module"
+                  }
+                ],
+                "module": "MedicalStaffModule"
+              }
+            ]
+          },
+          {
+            "path": "patient",
+            "loadChildren": "./modules/patient/patient.module#PatientModule",
+            "children": [
+              {
+                "kind": "module",
+                "children": [
+                  {
+                    "name": "routes",
+                    "filename": "src/app/modules/patient/patient-routing.module.ts",
+                    "module": "PatientRoutingModule",
+                    "children": [
+                      {
+                        "path": "",
+                        "component": "PatientPageComponent"
+                      }
+                    ],
+                    "kind": "module"
+                  }
+                ],
+                "module": "PatientModule"
+              }
+            ]
+          },
+          {
+            "path": "profile",
+            "loadChildren": "./modules/profile/profile.module#ProfileModule",
+            "children": [
+              {
+                "kind": "module",
+                "children": [
+                  {
+                    "name": "routes",
+                    "filename": "src/app/modules/profile/profile-routing.module.ts",
+                    "module": "ProfileRoutingModule",
+                    "children": [
+                      {
+                        "path": "",
+                        "component": "ProfilePageComponent"
+                      }
+                    ],
+                    "kind": "module"
+                  }
+                ],
+                "module": "ProfileModule"
+              }
+            ]
+          }
+        ],
+        "kind": "module"
+      }
+    ]
+  },
+  "coverage": {
+    "count": 0,
+    "status": "low",
+    "files": [
+      {
+        "filePath": "src/app/app.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "AppComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/core/models/visit.model.ts",
+        "type": "interface",
+        "linktype": "interface",
+        "name": "Visit",
+        "coveragePercent": 0,
+        "coverageCount": "0/10",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/modules/medical-staff/pages/mediacal-staff-page/mediacal-staff-page.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "MediacalStaffPageComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/modules/patient/pages/patient-page/patient-page.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "PatientPageComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/modules/patient/pages/visit-details-page/visit-details-page.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "VisitDetailsPageComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/modules/profile/pages/profile-page/profile-page.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "ProfilePageComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/components/footer/footer.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "FooterComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/components/header/header.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "HeaderComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/components/logo/logo.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "LogoComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/components/nav-list/nav-list.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "NavListComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/components/visit-details/visit-details.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "VisitDetailsComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/11",
+        "status": "low"
+      },
+      {
+        "filePath": "src/app/shared/layout/pages/layout-page/layout-page.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "LayoutPageComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/environments/environment.prod.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "environment",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/environments/environment.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "environment",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/visit-details.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "basic",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/visit-details.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Template",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/test.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "context",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/test.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "require",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      }
+    ]
+  }
+}
