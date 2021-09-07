@@ -1,3 +1,14 @@
+# Used technology:
+  - Angular 12
+  - SCSS
+  - Typescript
+  - Angular material
+  - proxy
+  - husky pre-commit hook
+  - Storybook
+  - Oauth (In this repository that not exist because backend team removed their repository and cancelled google auth token.)
+
+
 # Pull and run project
 - Create folder and open cmd at this folder location.
 - type:
